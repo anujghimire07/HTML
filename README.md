@@ -50,4 +50,4 @@ This repository can be useful for:
 ## Note
 
 This repository is continuously updated as I progress in my web development learning journey.
-
+thank you
