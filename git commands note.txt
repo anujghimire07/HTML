@@ -12,8 +12,10 @@ git ls
 git ls -a
 cd <-directory name->
 git add .
-git add <-file name->
+git add <-file name-> or "file name"
 git commit -m "some message'
+git rm <-file name-> or "file name"
+touch <-file name->
 
 1. untracked
 2. modified
