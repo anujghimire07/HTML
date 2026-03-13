@@ -1,0 +1,23 @@
+
+git config --global user.name "your name"
+git config --global user.email "example@gmail.com"
+git config --list
+
+clear
+
+git --version
+git clone <-link->
+git status
+git ls
+git ls -a
+cd <-directory name->
+git add .
+git add <-file name->
+git commit -m "some message'
+
+1. untracked
+2. modified
+3. staged
+4. unmodified
+
+
