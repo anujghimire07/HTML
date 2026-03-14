@@ -55,5 +55,3 @@ git merge <-branchname->
 git pull origin main //fetches the remotely made changes
 
 
-
-
