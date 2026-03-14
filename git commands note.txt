@@ -1,3 +1,4 @@
+stages:
 1. untracked
 2. modified
 3. staged
