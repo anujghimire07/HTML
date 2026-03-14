@@ -1,3 +1,8 @@
+1. untracked
+2. modified
+3. staged
+4. unmodified
+
 
 git config --global user.name "your name"
 git config --global user.email "example@gmail.com"
@@ -6,24 +11,33 @@ git config --list
 clear
 
 git --version
+
 git clone <-link->
+
 git status
 git ls
 git ls -a
-cd <-directory name->
-git add .
-git add <-file name-> or "file name"
-git commit -m "some message'
-git rm <-file name-> or "file name"
-touch <-file name->
-git push
-cd <-filename->
-cd ..
-mkdir <-reponame->
 
-1. untracked
-2. modified
-3. staged
-4. unmodified
+cd <-directory name->
+cd ..
+
+git add <-file name-> or "file name"
+git add . //works in the current folder
+git add -A //add everything inside the repo
+
+
+git commit -m "some message'
+
+git rm <-file name-> or "file name"
+
+touch <-file name->
+
+git push
+
+
+mkdir <-reponame-> //if single word filename
+mkdir "filename" //else use this
+
+
 
 
