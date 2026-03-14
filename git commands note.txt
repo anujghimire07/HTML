@@ -19,6 +19,7 @@ touch <-file name->
 git push
 cd <-filename->
 cd ..
+mkdir <-reponame->
 
 1. untracked
 2. modified
