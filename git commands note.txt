@@ -38,6 +38,22 @@ git push
 mkdir <-reponame-> //if single word filename
 mkdir "filename" //else use this
 
+git init
+
+git remote add <-origin name-> <-link->
+git remote -v
+
+git branch //checking which branch im in rightnow
+git branch -M <-name->//rename a branch
+git checkout -b <-branch name->//creating new branch
+git checkout <-branch name->//navigate between branches
+git branch -d <-branch name->//delete branch [note: cannot delete the branch im currently in ]
+
+git diff <-branch name->
+git merge <-branchname->
+
+git pull origin main //fetches the remotely made changes
+
 
 
 
