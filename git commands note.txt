@@ -17,6 +17,8 @@ git commit -m "some message'
 git rm <-file name-> or "file name"
 touch <-file name->
 git push
+cd <-filename->
+cd ..
 
 1. untracked
 2. modified
