@@ -34,7 +34,7 @@ git rm <-file name-> or "file name"
 touch <-file name->
 
 git push
-
+git push -u origin main //setting upstream
 
 mkdir <-reponame-> //if single word filename
 mkdir "filename" //else use this
@@ -49,9 +49,46 @@ git branch -M <-name->//rename a branch
 git checkout -b <-branch name->//creating new branch
 git checkout <-branch name->//navigate between branches
 git branch -d <-branch name->//delete branch [note: cannot delete the branch im currently in ]
-
+git push origin <-branch-> //push the changes you made in the branch to github
 git diff <-branch name->
-git merge <-branchname->
 
-git pull origin main //fetches the remotely made changes
-git
+
+git pull origin main //fetches the remotely made changes(the changes are merged usign pull request but it only happens on the remote file, so to brinng that change to local file's main, this comand is used)
+ANUZ GHIMIRE
+
+
+1. git merge <-branchname->//write branchname of the branch where you have made changes
+2. git commit 
+3. esc key press
+4. type=>  :wq
+5. press enter
+
+
+
+//you created a branch and want to merge the changes
+there are two ways:
+1. using pull request in github
+2. using git merge command
+
+
+
+
+
+
+1. using pull reuest in github
+- after merging remotely
+- git pull origin main
+
+
+2. using git merge command
+- make changes in branch
+- add the change
+-  commit the change
+- push the change
+- use git merge command
+- push the merge
+
+
+
+//handling merge conflicts
+branch 1
