@@ -91,3 +91,15 @@ there are two ways:
 
 
 //handling merge conflicts
+
+
+
+
+//undoing changes
+case1: staged changes(add)
+git reset <-filename->// for one file 
+git reset //for all files
+
+
+case2: commited changes(for one commit)
+git reset HEAD~1
