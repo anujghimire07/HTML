@@ -91,4 +91,3 @@ there are two ways:
 
 
 //handling merge conflicts
-branch 1
