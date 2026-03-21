@@ -100,6 +100,8 @@ case1: staged changes(add)
 git reset <-filename->// for one file 
 git reset //for all files
 
+restoring the previous file(reversing the changes and bring the file to its previous state)
+
 
 case2: commited changes(for one commit)
-git reset HEAD~1
+git reset HEAD~1 //uncommits the last file which was committed
