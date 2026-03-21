@@ -5,45 +5,78 @@ stages:
 4. unmodified
 
 
+//configuration commands
 git config --global user.name "your name"
 git config --global user.email "example@gmail.com"
 git config --list
 
-clear
 
+//basic system commands
+clear
 git --version
 
+
+//cloning a remote repo into our local system
 git clone <-link->
 
+
+//checking status and files
 git status
 git ls
 git ls -a
 
+
+//viewing histroy
+git log
+Enter → scroll down
+Space → next page
+b → scroll up
+q → quit
+
+
+//Directory Navigation
 cd <-directory name->
 cd ..
 
+
+//adding files to staging
 git add <-file name-> or "file name"
 git add . //works in the current folder
 git add -A //add everything inside the repo
 
 
-git commit -m "some message'
+//commit changes
+git commit -m "some message"
 
+
+//remove(delete) file
 git rm <-file name-> or "file name"
 
+
+//create file
 touch <-file name->
 
+
+//push changes
 git push
-git push -u origin main //setting upstream
+git push -u origin main //pushes and sets upstream
 
+
+//creating a folder
 mkdir <-reponame-> //if single word filename
-mkdir "filename" //else use this
+mkdir "filename" //if multiple word file name 
 
+
+//initialize git
 git init
 
+
+//remote repo
 git remote add <-origin name-> <-link->
 git remote -v
 
+
+//branching
 git branch //checking which branch im in rightnow
 git branch -M <-name->//rename a branch
 git checkout -b <-branch name->//creating new branch
@@ -53,44 +86,37 @@ git push origin <-branch-> //push the changes you made in the branch to github
 git diff <-branch name->
 
 
-git pull origin main //fetches the remotely made changes(the changes are merged usign pull request but it only happens on the remote file, so to brinng that change to local file's main, this comand is used)
-ANUZ GHIMIRE
-
-
-1. git merge <-branchname->//write branchname of the branch where you have made changes
-2. git commit 
-3. esc key press
-4. type=>  :wq
-5. press enter
+//pull changes
+git pull origin main //fetches the remotely made changes
+                       (the changes are merged usiing pull
+                       request but it only happens on the 
+                       remote file, so to brinng that change
+                       to local file's main, this comand is
+                       used)
 
 
 
+//merging
 //you created a branch and want to merge the changes
 there are two ways:
 1. using pull request in github
-2. using git merge command
-
-
-
-
-
-
-1. using pull reuest in github
-- after merging remotely
-- git pull origin main
+-  after merging remotely
+-  git pull origin main
 
 
 2. using git merge command
+i.    git merge <-branchname->//write branchname of the branch where you have made changes
+ii.   git commit 
+iii.  esc key press
+iv.   type=>  :wq
+v.    press enter
+
 - make changes in branch
 - add the change
--  commit the change
+- commit the change
 - push the change
 - use git merge command
 - push the merge
-
-
-
-//handling merge conflicts
 
 
 
@@ -100,8 +126,15 @@ case1: staged changes(add)
 git reset <-filename->// for one file 
 git reset //for all files
 
-restoring the previous file(reversing the changes and bring the file to its previous state)
-
 
 case2: commited changes(for one commit)
-git reset HEAD~1 //uncommits the last file which was committed
+git reset HEAD~1 //uncommits and unstaged the last commit
+
+
+case3: commited changes(for many commits)
+git reset <-commit hash->//go to commit you want (commit hash is in git log)
+git reset --hard <-commit hash->///also reoves the chnages inside our vscode (git reset <-commit hash only undoes change in git->
+
+
+//restore(reversing the changes and bring the file to its previous state)
+git restore <-filename->
