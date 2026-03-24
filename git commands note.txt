@@ -133,7 +133,7 @@ git reset HEAD~1 //uncommits and unstaged the last commit
 
 case3: commited changes(for many commits)
 git reset <-commit hash->//go to commit you want (commit hash is in git log)
-git reset --hard <-commit hash->///also reoves the chnages inside our vscode (git reset <-commit hash only undoes change in git->
+git reset --hard <-commit hash->///also reoves the chnages inside our vscode (git reset <-commit hash-> only undoes change in git)
 
 
 //restore(reversing the changes and bring the file to its previous state)
